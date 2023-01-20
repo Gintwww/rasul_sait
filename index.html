@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>index</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header_container header_1"></div>
+            <div class="header_container header_2">
+                Добро пожаловать на персональный сайт<br> Акунова Расула Сергеевича
+            </div>
+            <div class="header_container header_3">
+                
+            </div>
+        </header>
+
+        <main>
+            <div class="main_container main_1"></div>
+            <div class="main_container main_2"></div>
+            <div class="main_container main_3">
+
+                <div class="empty_container empty_1"></div>
+
+                <div class="nav_container empty_1">
+                    
+                </div>
+
+                <div class="empty_container empty_2"></div>
+
+            </div>
+        </main>
+
+        <div class="wrapper_empty">
+            <div class="empty_main main_new_1"></div>
+
+            <div class="empty_main main_new_1">
+                <div class="block_about_new">О себе</div>
+            </div>
+
+            <div class="empty_main main_new_3"></div>
+
+        </div>
+
+        <div class="lines_container">
+            <div class="wrapper_about about_1">
+                <div class="block_about">
+                    <pre>
+Акунов Расул Сергеевич
+25 лет напиши
+Учился в ГАГУ
+Высшее образование
+Специалист в области безопасности жизнедеятельности
+                    </pre>
+                </div>
+            </div>
+
+            <div class="wrapper_about about_2">2</div>
+
+            <div class="wrapper_about about_3">
+                <div class="block_about_photo photo_slaider">
+                    <img src="img/gram_1.jpg">
+                    <img src="img/gram_2.jpg">
+                    <img src="img/gram_3.jpg">
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <footer>
+            <div class="footer_container">
+                b
+                <div class="headline"></div>
+                <div class="wrapper_contakt">
+                    <div class="keis"></div>
+                    <div class="keis"></div>
+                    <div class="keis"></div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        var indexValue = 0;
+        function SliderShow() {
+            setTimeout(SliderShow, 1500)
+            var x;
+            const img = document.querySelectorAll("img");
+            for(x = 0; x < img.length; x++)
+            {
+                img[x].style.display = "none";
+            } 
+            indexValue++;
+            if(indexValue > img.length)
+            {
+                indexValue = 1
+            }
+            img[indexValue - 1].style.display = "block";
+
+        }
+        SliderShow();
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
